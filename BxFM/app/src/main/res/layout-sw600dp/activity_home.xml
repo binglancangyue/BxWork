@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fm_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_sub" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bg1"
+            android:gravity="center"
+            android:minWidth="220dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/HomeTextViewStyle"
+                android:textSize="32sp" />
+
+            <TextView
+                style="@style/HomeTextViewStyle"
+                android:layout_marginStart="5dp"
+                android:text="@string/home_mhz"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_add" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            style="@style/HomeTextViewStyle"
+            android:layout_gravity="start"
+            android:layout_marginStart="70dp"
+            android:text="76.0" />
+
+        <TextView
+            style="@style/HomeTextViewStyle"
+            android:layout_gravity="end"
+            android:layout_marginEnd="65dp"
+            android:text="108.0" />
+
+
+        <com.bixin.bxfm.model.ScaleView
+            android:id="@+id/hz_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:paddingTop="35dp"
+            android:paddingBottom="35dp" />
+
+        <SeekBar
+            android:id="@+id/seek_bar_hz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="65dp"
+            android:max="320"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/hb"
+            android:thumbOffset="0dip" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_copy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/HomeTextViewStyle"
+            android:text="@string/btn_fm_close" />
+
+        <ImageView
+            android:id="@+id/iv_fm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/selector_switch" />
+
+        <TextView
+            style="@style/HomeTextViewStyle"
+            android:text="@string/btn_fm_open" />
+    </LinearLayout>
+</LinearLayout>

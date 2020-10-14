@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FM发射</string>
+    <string name="home_mhz">MHZ</string>
+    <string name="btn_fm_close">关</string>
+    <string name="btn_fm_open">开</string>
+</resources>

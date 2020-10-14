@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "com.bixin.bxfm"
+        minSdkVersion 19
+        //noinspection OldTargetApi
+        targetSdkVersion 27
+        versionCode 1
+        versionName '1.0.20.0926.1'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled false
+    }
+    buildTypes {
+        release {
+            // 开启混淆
+            minifyEnabled false
+            // Zipalign压缩优化
+            zipAlignEnabled true
+            // 移除无用的资源文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.13'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+}

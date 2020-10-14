@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FM</string>
+    <string name="home_mhz">MHZ</string>
+    <string name="btn_fm_close">ON</string>
+    <string name="btn_fm_open">OFF</string>
+</resources>
