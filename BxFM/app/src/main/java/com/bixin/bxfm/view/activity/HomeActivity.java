@@ -240,11 +240,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
             Log.d(TAG, "openFm:on ");
         } catch (IOException e) {
             e.printStackTrace();
-<<<<<<< HEAD
             Log.e(TAG, "openFm: " + e.getMessage());
-=======
-            Log.e(TAG, "closeFm: " + e.getMessage());
->>>>>>> a7c4913... 提交FM
         }
     }
 
@@ -255,11 +251,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
             fm_power.flush();
             fm_power.close();
             setSpeakerphoneOn(true);
-<<<<<<< HEAD
             Log.d(TAG, "closeFm:on off");
-=======
-            Log.d(TAG, "openFm:on off");
->>>>>>> a7c4913... 提交FM
         } catch (IOException e) {
             e.printStackTrace();
             Log.e(TAG, "closeFm: " + e.getMessage());
